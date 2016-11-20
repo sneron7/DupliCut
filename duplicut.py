@@ -128,4 +128,5 @@ if '__main__' == __name__:
 
 # TODO: add flag for delete or just print the files
 # TODO: add flag and folder to move the files instead of delete
+# TODO: change the folder_path to be an array of folders
 # TODO: add GUI
