@@ -4,9 +4,9 @@ import time
 import hashlib
 from operator import itemgetter
 
-path = '/home/ron/Dropbox'
-report_file = '/home/ron/Desktop/duplicut_report.txt'
-ignore_suffixes_list = ['html', 'htm']
+path = 'your_folder_path'
+report_file = 'report_folder_path/duplicut_report.txt'
+ignore_suffixes_list = ['html', 'htm', 'py', 'java', 'h', 'cpp', 'c']
 READ_BUFFER_SIZE = 65536
 files_dict = {}  # every element contains list of file descriptors (dictionaries)
 duplicates_list = []
@@ -128,3 +128,4 @@ if '__main__' == __name__:
 
 # TODO: add flag for delete or just print the files
 # TODO: add flag and folder to move the files instead of delete
+# TODO: add GUI
