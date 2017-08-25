@@ -5,6 +5,8 @@ import hashlib
 import shutil
 from operator import itemgetter
 
+VERSION = '0.2'
+
 scan_path_list = None
 delete_report_file = None
 duplicates_report_file = None
@@ -228,20 +230,6 @@ def run_dupli_cut(working_mode, scan_list, del_report_file, dup_report_file, mov
         print 'Delete Mode!!!'
         _do_delete()
     _print_report_summary()
-
-
-if '__main__' == __name__:
-    try:
-        mode = 'M'
-        scan_list = ['/home/ron/Desktop/duplicut_tester']  # ['/home/ron/Dropbox/MyBackup']
-        del_report_file = '/home/ron/Desktop/duplicut_delete_report.txt'
-        dup_report_file = '/home/ron/Desktop/duplicut_duplacates_report.txt'
-        moved_folder = '/home/ron/Desktop/Duplicut_moved_files/'
-        ignore_suffixes = ['html', 'htm', 'py', 'java', 'h', 'hpp', 'cpp', 'c', 'duplicutted']
-
-        run_dupli_cut(mode, scan_list, del_report_file, dup_report_file, moved_folder, ignore_suffixes)
-    except:
-        exception_utils.print_exception()
 
 
 # TODO: add argv for paths, flags, ignore_list
