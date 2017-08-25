@@ -1,6 +1,7 @@
 import traceback, sys
 import datetime
 
+
 def print_exception(extraMessage=None):
     print ''
     print '-' * 70
