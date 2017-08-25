@@ -4,7 +4,7 @@ import exception_utils
 if '__main__' == __name__:
     try:
         mode = 'M'
-        scan_list = ['/home/ron/Desktop/duplicut_tester']  # ['/home/ron/Dropbox/MyBackup']
+        scan_list = ['/home/ron/Desktop/duplicut_tester']
         del_report_file = '/home/ron/Desktop/duplicut_delete_report.txt'
         dup_report_file = '/home/ron/Desktop/duplicut_duplacates_report.txt'
         moved_folder = '/home/ron/Desktop/Duplicut_moved_files/'
